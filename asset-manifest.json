@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/income-expense-tracker/static/css/main.086a4bab.css",
-    "main.js": "/income-expense-tracker/static/js/main.ced91114.js",
+    "main.js": "/income-expense-tracker/static/js/main.69d3c928.js",
     "static/js/453.1b430c72.chunk.js": "/income-expense-tracker/static/js/453.1b430c72.chunk.js",
     "static/media/logo.png": "/income-expense-tracker/static/media/logo.e2743b497f41829a4224.png",
     "index.html": "/income-expense-tracker/index.html",
     "main.086a4bab.css.map": "/income-expense-tracker/static/css/main.086a4bab.css.map",
-    "main.ced91114.js.map": "/income-expense-tracker/static/js/main.ced91114.js.map",
+    "main.69d3c928.js.map": "/income-expense-tracker/static/js/main.69d3c928.js.map",
     "453.1b430c72.chunk.js.map": "/income-expense-tracker/static/js/453.1b430c72.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.086a4bab.css",
-    "static/js/main.ced91114.js"
+    "static/js/main.69d3c928.js"
   ]
 }
