@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { PlusIcon } from "@heroicons/react/20/solid";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { useDispatch, useSelector } from "react-redux";
 import { logOutUserAction } from "../../redux/slices/users";
@@ -12,9 +12,11 @@ export default function Navbar() {
   });
   const isLogin = !!userInfo?.token;
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const logOutHandler = () => {
     dispatch(logOutUserAction());
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { loginUserAction } from "../../redux/slices/users";
 
 const Login = () => {
@@ -26,8 +26,10 @@ const Login = () => {
     return state.users;
   });
 
+  const navigate = useNavigate();
+
   if (userAuth?.userInfo?.status) {
-    window.location.href = "/dashboard";
+    navigate("/dashboard");
   }
 
   return (

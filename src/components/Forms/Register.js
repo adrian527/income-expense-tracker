@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUserAction } from "../../redux/slices/users";
 
@@ -29,8 +29,10 @@ const Login = () => {
     return state.users;
   });
 
+  const navigate = useNavigate();
+
   if (userAuth?.userInfo?.status) {
-    window.location.href = "/login";
+    navigate("/login");
   }
 
   return (
